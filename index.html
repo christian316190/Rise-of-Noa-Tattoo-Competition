@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#f2eee6">
+    <meta name="description" content="Register your work for the Rise of Noa Tattoo Competition.">
+    <title>Enter the Competition | Rise of Noa</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Oswald:wght@400;500;600;700&family=Rye&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="site-header home-header">
+        <a class="brand-logo" href="#top" aria-label="Rise of Noa Tattoo Competition home">
+            <span class="brand-title">Rise of Noa Tattoo Competition</span>
+        </a>
+        <nav class="top-nav" aria-label="Main navigation">
+            <a href="gallery.html">GALLERY</a>
+            <a class="nav-cta" href="#register">Register <span aria-hidden="true">↗</span></a>
+        </nav>
+    </header>
+
+    <main id="top">
+        <section class="hero" id="competition" aria-labelledby="hero-title">
+            <div class="hero-copy">
+                <p class="eyebrow"><span class="eyebrow-line"></span> A celebration of ink &amp; artistry</p>
+                <h1 id="hero-title">MAKE YOUR<br><span>MARK.</span></h1>
+                <p class="hero-description">The Rise of Noa Tattoo Competition brings artists and their strongest work into the spotlight. Put your piece forward.</p>
+                <a class="text-link" href="#register">Submit your entry <span aria-hidden="true">↓</span></a>
+                <div class="event-note"><span class="event-dot"></span> Event date &amp; venue to be announced. . .</div>
+            </div>
+            <div class="hero-index" aria-hidden="true">EST. IN INK <span>—</span> OPEN CALL</div>
+        </section>
+
+        <section class="registration" id="register" aria-labelledby="registration-title">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow"><span class="eyebrow-line"></span> Official competition registration</p>
+                    <h2 id="registration-title">YOUR ENTRY<span class="period">.</span></h2>
+                </div>
+                <p class="section-intro">Register the artist, collector, and up to two competition entries. Fields marked <span aria-hidden="true">*</span> are required.</p>
+            </div>
+
+            <form id="entry-form">
+                <div class="form-layout">
+                    <div class="form-main">
+                        <fieldset class="form-section">
+                            <legend><span class="section-number">01</span> Tattoo artist information</legend>
+                            <div class="field-grid">
+                                <label class="field"><span>First Name <b>*</b></span><input name="artistFirstName" autocomplete="given-name" required></label>
+                                <label class="field"><span>Last Name <b>*</b></span><input name="artistLastName" autocomplete="family-name" required></label>
+                                <label class="field field-wide"><span>Tattoo Shop / Studio Name <b>*</b></span><input name="studio" autocomplete="organization" placeholder="Shop name or Independent" required></label>
+                                <label class="field field-wide"><span>Street Address <b>*</b></span><input name="streetAddress" autocomplete="street-address" required></label>
+                                <label class="field"><span>City <b>*</b></span><input name="city" autocomplete="address-level2" required></label>
+                                <label class="field"><span>State <b>*</b></span><input name="state" autocomplete="address-level1" required></label>
+                                <label class="field"><span>ZIP Code <b>*</b></span><input name="zip" inputmode="numeric" autocomplete="postal-code" required></label>
+                                <label class="field"><span>Email Address <b>*</b></span><input name="artistEmail" type="email" autocomplete="email" placeholder="artist@email.com" required></label>
+                                <label class="field"><span>Phone Number <b>*</b></span><input name="artistPhone" type="tel" autocomplete="tel" placeholder="+63 917 123 4567" required></label>
+                                <label class="field field-wide"><span>Portfolio / Instagram handle <b>*</b></span><input name="portfolio" placeholder="@username or portfolio URL" required></label>
+                            </div>
+                        </fieldset>
+
+                        <fieldset class="form-section">
+                            <legend><span class="section-number">02</span> Canvas / Model's Information</legend>
+                            <div class="field-grid">
+                                <label class="field"><span>First Name <b>*</b></span><input name="collectorFirstName" autocomplete="section-collector given-name" required></label>
+                                <label class="field"><span>Last Name <b>*</b></span><input name="collectorLastName" autocomplete="section-collector family-name" required></label>
+                                <label class="field"><span>Date of Birth <b>*</b></span><input id="collector-birth-date" name="collectorBirthDate" type="date" autocomplete="bday" required><span class="field-hint">Collector must be 18 or older.</span></label>
+                                <label class="field"><span>Email Address <b>*</b></span><input name="collectorEmail" type="email" autocomplete="section-collector email" placeholder="collector@email.com" required></label>
+                                <label class="field field-wide"><span>Phone Number <b>*</b></span><input name="collectorPhone" type="tel" autocomplete="section-collector tel" placeholder="+63 917 123 4567" required></label>
+                            </div>
+                        </fieldset>
+
+                        <fieldset class="form-section">
+                            <legend><span class="section-number">03</span> Competition Entries</legend>
+                            <p class="section-note">Select up to two entries. On-the-Spot tattoos must be completed entirely at the convention venue.</p>
+                            <div class="entry-list" id="entry-list">
+                                <fieldset class="entry-card" data-entry-index="1">
+                                    <legend class="entry-card-heading"><span>ENTRY 01</span><span class="entry-price">₱4,500</span></legend>
+                                    <div class="field-grid">
+                                        <label class="field field-wide"><span>Competition Category <b>*</b></span>
+                                            <select name="entry1Category" class="entry-category" required>
+                                                <option value="">Choose a Category</option>
+                                                <optgroup label="Pre-Made / Healed">
+                                                    <option value="Black & Grey (Medium / Big Piece)">Black &amp; Grey (Medium / Big Piece)</option>
+                                                    <option value="Color (Medium / Big Piece)">Color (Medium / Big Piece)</option>
+                                                    <option value="Traditional / Neo-Traditional">Traditional / Neo-Traditional</option>
+                                                    <option value="Realism / Portrait">Realism / Portrait</option>
+                                                    <option value="Oriental / Tribal">Oriental / Tribal</option>
+                                                </optgroup>
+                                                <optgroup label="Live / On-the-Spot">
+                                                    <option value="On-the-Spot Tattoo of the Day (Day 1)">Tattoo of the Day (Day 1)</option>
+                                                    <option value="On-the-Spot Tattoo of the Day (Day 2)">Tattoo of the Day (Day 2)</option>
+                                                    <option value="On-the-Spot Cover-Up Challenge">Cover-Up Challenge</option>
+                                                </optgroup>
+                                            </select>
+                                            <span class="field-hint entry-category-error" role="alert"></span>
+                                        </label>
+                                        <div class="onsite-note field-wide" hidden>On-the-Spot entry: the tattoo must be done entirely at the convention venue.</div>
+                                        <fieldset class="entry-artwork field-wide" hidden>
+                                            <legend>Artwork reference <span class="field-hint">For pre-made / healed entries</span></legend>
+                                            <div class="field-grid">
+                                                <label class="field field-wide"><span>Tattoo placement on body <b>*</b></span>
+                                                    <select name="entry1Placement" required><option value="">Choose placement</option><option>Arm</option><option>Leg</option><option>Back</option><option>Chest</option><option>Full Body</option><option>Other</option></select>
+                                                </label>
+                                                <label class="field field-wide upload-field"><span>High-resolution photo <b>*</b></span>
+                                                    <span class="upload-control"><input name="entry1Photo" type="file" accept=".jpg,.jpeg,.png,image/jpeg,image/png" required><span class="upload-icon" aria-hidden="true">+</span><span class="upload-copy"><strong>Choose JPG or PNG</strong><span>One image · maximum 10 MB</span></span></span>
+                                                    <span class="field-hint upload-error" role="alert"></span>
+                                                </label>
+                                                <label class="field field-wide"><span>Brief description <b>*</b></span><textarea name="entry1Description" rows="4" maxlength="700" placeholder="Describe the style, inspiration, or hours taken" required></textarea></label>
+                                            </div>
+                                        </fieldset>
+                                    </div>
+                                    <button class="remove-entry" type="button" hidden>Remove this entry</button>
+                                </fieldset>
+                            </div>
+                            <button class="add-entry" id="add-entry" type="button"><span aria-hidden="true">+</span> Add a second entry</button>
+                            <p class="entry-limit" id="entry-limit">Maximum 2 entries per artist.</p>
+                        </fieldset>
+
+                        <fieldset class="form-section">
+                            <legend><span class="section-number">04</span> Payment &amp; waiver</legend>
+                            <div class="field-grid">
+                                <fieldset class="payment-field field field-wide">
+                                    <legend>Payment method <b>*</b></legend>
+                                    <div class="payment-options">
+                                        <label class="payment-option"><input type="radio" name="paymentMethod" value="Credit / Debit Card" required><span>Credit / Debit Card</span></label>
+                                        <label class="payment-option"><input type="radio" name="paymentMethod" value="PayPal"><span>PayPal</span></label>
+                                        <label class="payment-option"><input type="radio" name="paymentMethod" value="Square / Stripe"><span>Square / Stripe</span></label>
+                                    </div>
+                                    <span class="field-hint">Payment processing is not connected in this registration preview.</span>
+                                </fieldset>
+                                <label class="waiver-option field-wide"><input type="checkbox" name="waiver" required><span>I certify that the artwork entered is original and belongs to the registered artist. I agree to the Competition Rules &amp; Guidelines. <b>*</b></span></label>
+                            </div>
+                        </fieldset>
+                    </div>
+
+                    <aside class="entry-aside" aria-label="Registration summary">
+                        <div class="aside-title"><span>REGISTRATION SUMMARY</span><span aria-hidden="true">↘</span></div>
+                        <div class="fee-summary"><span>Entry fee</span><strong>₱4,500 <small>/ entry</small></strong></div>
+                        <div class="fee-total"><span id="entry-count">1 entry</span><strong id="fee-total">₱4,500</strong></div>
+                        <p class="fee-note">Total updates when you add or remove an entry. Select payment method below.</p>
+                        <div class="aside-rule"></div>
+                        <ol class="entry-steps">
+                            <li><span>01</span><p>One registration may include up to two entries.</p></li>
+                            <li><span>02</span><p>On-the-Spot work must be completed at the convention venue.</p></li>
+                            <li><span>03</span><p>Canvas / Model must be at least 18 years old.</p></li>
+                        </ol>
+                        <button class="submit-button" type="submit">Submit registration <span aria-hidden="true">↗</span></button>
+                        <p class="form-disclaimer">Preview only: this form does not send entries or process payment.</p>
+                        <div class="form-status" id="form-status" role="status" aria-live="polite" hidden></div>
+                    </aside>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer class="site-footer" id="contact">
+        <a class="footer-logo" href="#top" aria-label="Rise of Noa Tattoo Competition home">
+            <img src="Rise%20of%20Noa%20Tattoo%20Competition%202%20logo.jpg" alt="">
+        </a>
+        <a href="#register">Enter the competition <span aria-hidden="true">↗</span></a>
+        <span class="footer-note">Event details to be announced</span>
+    </footer>
+
+    <script>
+        const entryForm = document.querySelector("#entry-form");
+        const entryList = document.querySelector("#entry-list");
+        const firstEntry = entryList.querySelector(".entry-card");
+        const addEntryButton = document.querySelector("#add-entry");
+        const birthDateInput = document.querySelector("#collector-birth-date");
+        const entryCount = document.querySelector("#entry-count");
+        const feeTotal = document.querySelector("#fee-total");
+        const formStatus = document.querySelector("#form-status");
+
+        function updateAgeLimit() {
+            const latestBirthDate = new Date();
+            latestBirthDate.setHours(0, 0, 0, 0);
+            latestBirthDate.setFullYear(latestBirthDate.getFullYear() - 18);
+            const year = latestBirthDate.getFullYear();
+            const month = String(latestBirthDate.getMonth() + 1).padStart(2, "0");
+            const day = String(latestBirthDate.getDate()).padStart(2, "0");
+            birthDateInput.max = `${year}-${month}-${day}`;
+            if (!birthDateInput.value) {
+                birthDateInput.setCustomValidity("");
+                return;
+            }
+            const birthDate = new Date(`${birthDateInput.value}T00:00:00`);
+            birthDateInput.setCustomValidity(birthDate <= latestBirthDate ? "" : "The collector must be at least 18 years old.");
+        }
+
+        function updatePhotoValidity(input) {
+            const file = input.files[0];
+            const error = input.closest(".upload-field").querySelector(".upload-error");
+            let message = "";
+            if (file && (!/\.(jpe?g|png)$/i.test(file.name) || (file.type && !["image/jpeg", "image/png"].includes(file.type)))) {
+                message = "Please choose a JPG or PNG image.";
+            } else if (file && file.size > 10 * 1024 * 1024) {
+                message = "The image must be 10 MB or smaller.";
+            }
+            input.setCustomValidity(message);
+            error.textContent = message;
+        }
+
+        function updateEntryCard(card) {
+            const category = card.querySelector(".entry-category").value;
+            const isPremade = category && !category.startsWith("On-the-Spot");
+            const artwork = card.querySelector(".entry-artwork");
+            const onsiteNote = card.querySelector(".onsite-note");
+            const placement = card.querySelector('select[name$="Placement"]');
+            const photo = card.querySelector('input[type="file"]');
+            const description = card.querySelector("textarea");
+
+            artwork.hidden = !isPremade;
+            onsiteNote.hidden = !category || isPremade;
+            placement.required = Boolean(isPremade);
+            photo.required = Boolean(isPremade);
+            description.required = Boolean(isPremade);
+            updatePhotoValidity(photo);
+        }
+
+        function updateCategoryValidity() {
+            const selects = [...entryList.querySelectorAll(".entry-category")];
+            selects.forEach((select) => {
+                const duplicate = select.value && selects.some((other) => other !== select && other.value === select.value);
+                const message = duplicate ? "Choose a different category for each entry." : "";
+                select.setCustomValidity(message);
+                select.closest(".field").querySelector(".entry-category-error").textContent = message;
+            });
+        }
+
+        function updateFee() {
+            const count = entryList.querySelectorAll(".entry-card").length;
+            entryCount.textContent = `${count} ${count === 1 ? "entry" : "entries"}`;
+            feeTotal.textContent = `₱${(count * 4500).toLocaleString("en-PH")}`;
+        }
+
+        function addSecondEntry() {
+            const secondEntry = firstEntry.cloneNode(true);
+            secondEntry.dataset.entryIndex = "2";
+            secondEntry.querySelector(".entry-card-heading span:first-child").textContent = "ENTRY 02";
+            secondEntry.querySelectorAll("[name]").forEach((control) => {
+                control.name = control.name.replace("entry1", "entry2");
+            });
+            const removeButton = secondEntry.querySelector(".remove-entry");
+            removeButton.hidden = false;
+            entryList.append(secondEntry);
+            secondEntry.querySelector(".entry-category").addEventListener("change", () => {
+                updateEntryCard(secondEntry);
+                updateCategoryValidity();
+            });
+            secondEntry.querySelector('input[type="file"]').addEventListener("change", (event) => updatePhotoValidity(event.currentTarget));
+            removeButton.addEventListener("click", () => {
+                secondEntry.remove();
+                addEntryButton.hidden = false;
+                updateCategoryValidity();
+                updateFee();
+            });
+            addEntryButton.hidden = true;
+            updateFee();
+        }
+
+        birthDateInput.addEventListener("input", updateAgeLimit);
+        birthDateInput.addEventListener("change", updateAgeLimit);
+        firstEntry.querySelector(".entry-category").addEventListener("change", () => {
+            updateEntryCard(firstEntry);
+            updateCategoryValidity();
+        });
+        firstEntry.querySelector('input[type="file"]').addEventListener("change", (event) => updatePhotoValidity(event.currentTarget));
+        addEntryButton.addEventListener("click", addSecondEntry);
+
+        entryForm.addEventListener("submit", (event) => {
+            event.preventDefault();
+            updateAgeLimit();
+            updateCategoryValidity();
+            const invalidPhoto = [...entryList.querySelectorAll('input[type="file"]')].find((input) => !input.validity.valid);
+            if (invalidPhoto) {
+                invalidPhoto.reportValidity();
+                return;
+            }
+            formStatus.hidden = false;
+            formStatus.textContent = `Registration is complete for review: ${entryCount.textContent}, ${feeTotal.textContent} due. This preview does not send entries or process payment.`;
+        });
+
+        updateAgeLimit();
+        updateEntryCard(firstEntry);
+    </script>
+</body>
+</html>

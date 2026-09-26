@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#090a0b">
+    <meta name="description" content="Explore Rise of Noa Tattoo Competition artwork and category highlights.">
+    <title>Gallery | Rise of Noa Tattoo Competition</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Oswald:wght@400;500;600;700&family=Rye&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="site-header">
+        <a class="brand-logo" href="index.html" aria-label="Rise of Noa home">
+            <span class="brand-title">Rise of Noa Tattoo Competition</span>
+        </a>
+        <nav class="top-nav" aria-label="Main navigation">
+            <a href="index.html">HOME</a>
+            <a class="nav-cta" href="index.html#register">Register <span aria-hidden="true">↗</span></a>
+        </nav>
+    </header>
+
+    <main class="gallery-main">
+        <div class="gallery-heading">
+            <div>
+                <p class="eyebrow"><span class="eyebrow-line"></span> Rise of Noa Tattoo Competition</p>
+                <h1>THE <span>GALLERY.</span></h1>
+            </div>
+            <p class="gallery-intro">Competition artwork, category highlights, and the artists who bring Rise of Noa to life.</p>
+        </div>
+
+        <section class="gallery-grid" aria-label="Competition artwork">
+            <article class="gallery-card">
+                <button class="gallery-artwork" type="button" aria-label="View the Rise of Noa event poster">
+                    <img src="Rise%20of%20Noa%20Tattoo%20Competition%2022.jpg" alt="Rise of Noa Tattoo Competition event poster with category and prize information">
+                </button>
+                <div class="gallery-caption"><div><p>EVENT ARTWORK</p><h2>Competition Poster</h2></div><span class="gallery-index">01</span></div>
+            </article>
+            <article class="gallery-card">
+                <button class="gallery-artwork" type="button" aria-label="View the Newbie category champion artwork" data-caption="Last years Champion">
+                    <img src="Rise%20of%20Noa%20Tattoo%20Competition%20(Newbie%20Category%20-%20Champion).jpg" alt="Newbie category champion artwork for Rise of Noa Tattoo Competition">
+                </button>
+                <div class="gallery-caption"><div><p>CATEGORY HIGHLIGHT</p><h2>Newbie Category</h2></div><span class="gallery-index">02</span></div>
+            </article>
+            <article class="gallery-card">
+                <button class="gallery-artwork" type="button" aria-label="View the Professional category champion artwork" data-caption="Last years Champion">
+                    <img src="Rise%20of%20Noa%20Tattoo%20Competition%20(Professional%20Category%20-%20Champion).jpg" alt="Professional category champion artwork for Rise of Noa Tattoo Competition">
+                </button>
+                <div class="gallery-caption"><div><p>CATEGORY HIGHLIGHT</p><h2>Professional Category</h2></div><span class="gallery-index">03</span></div>
+            </article>
+            <article class="gallery-card">
+                <button class="gallery-artwork gallery-artwork-wide" type="button" aria-label="View Noa with the judges and host" data-caption="Noa with the Judges and our Host.">
+                    <img src="Noa%20with%20the%20Judges2.jpg" alt="Noa with the judges and host at the competition">
+                </button>
+                <div class="gallery-caption"><div><p>BEHIND THE SCENES</p><h2>Noa with the Judges and our Host.</h2></div><span class="gallery-index">04</span></div>
+            </article>
+            <article class="gallery-card">
+                <button class="gallery-artwork gallery-artwork-wide gallery-video-artwork" type="button" aria-label="Play Rise of Noa Tattoo Competition video highlights" data-media="video" data-video="Rise%20on%20Noa%20video%20highlights.mp4" data-caption="Ink. Passion. Raw talent on full display 🔥&#10;Congrats to all&#10;Video Highlights | Rise of Noa Tattoo Competition&#10;#RiseofNoa #TattooCompetition #InkCulture #TattooArt #rfseedvisuals #VideoHighlights #eventcoverage">
+                    <img src="Noa%20with%20the%20Judges2.jpg" alt="Preview of Rise of Noa Tattoo Competition video highlights">
+                    <span class="gallery-play" aria-hidden="true">▶</span>
+                </button>
+                <div class="gallery-caption"><div><p>EVENT VIDEO</p><h2>Video Highlights</h2></div><span class="gallery-index">05</span></div>
+            </article>
+            <article class="gallery-card">
+                <button class="gallery-artwork gallery-artwork-wide gallery-video-artwork" type="button" aria-label="Play Rise of Noa onsite photo AVP" data-media="video" data-video="Rise%20of%20Noa%20video%20highlights2.mp4" data-caption="Rise of Noa Tattoo Competition | Onsite Photo AVP&#10;Every line tells a story, every piece hits different.&#10;#RiseofNoa #TattooCompetition #InkCulture #TattooArt #sdephotography #OnsitePhotography #PhotoHighlights #DumagueteEvents #NegrosCreatives #SupportLocalArtists #RFseedVisuals">
+                    <img src="Noa%20with%20the%20Judges2.jpg" alt="Preview of Rise of Noa onsite photo AVP">
+                    <span class="gallery-play" aria-hidden="true">▶</span>
+                </button>
+                <div class="gallery-caption"><div><p>EVENT VIDEO</p><h2>Onsite Photo AVP</h2></div><span class="gallery-index">06</span></div>
+            </article>
+        </section>
+
+        <dialog class="gallery-lightbox" id="gallery-lightbox" aria-label="Artwork preview">
+            <button class="gallery-lightbox-close" type="button" aria-label="Close artwork preview">&times;</button>
+            <img id="gallery-lightbox-image" alt="">
+            <video id="gallery-lightbox-video" controls playsinline preload="none" hidden></video>
+            <p class="gallery-lightbox-caption" id="gallery-lightbox-caption" hidden></p>
+        </dialog>
+    </main>
+
+    <footer class="site-footer">
+        <a class="footer-logo" href="index.html" aria-label="Rise of Noa home">
+            <img src="Rise%20of%20Noa%20Tattoo%20Competition%202%20logo.jpg" alt="">
+        </a>
+        <a href="index.html#register">Enter the competition <span aria-hidden="true">↗</span></a>
+        <span class="footer-note">RISE OF NOA / TATTOO COMPETITION</span>
+    </footer>
+
+    <script>
+        const galleryLightbox = document.querySelector("#gallery-lightbox");
+        const galleryLightboxImage = document.querySelector("#gallery-lightbox-image");
+        const galleryLightboxVideo = document.querySelector("#gallery-lightbox-video");
+        const galleryLightboxCaption = document.querySelector("#gallery-lightbox-caption");
+
+        document.querySelectorAll(".gallery-artwork").forEach((button) => {
+            button.addEventListener("click", () => {
+                if (button.dataset.media === "video") {
+                    galleryLightboxImage.hidden = true;
+                    galleryLightboxVideo.hidden = false;
+                    galleryLightboxVideo.src = button.dataset.video;
+                    galleryLightboxVideo.load();
+                    galleryLightboxVideo.play().catch(() => {});
+                } else {
+                    const image = button.querySelector("img");
+                    galleryLightboxVideo.pause();
+                    galleryLightboxVideo.removeAttribute("src");
+                    galleryLightboxVideo.load();
+                    galleryLightboxVideo.hidden = true;
+                    galleryLightboxImage.hidden = false;
+                    galleryLightboxImage.src = image.src;
+                    galleryLightboxImage.alt = image.alt;
+                }
+                galleryLightboxCaption.textContent = button.dataset.caption || "";
+                galleryLightboxCaption.hidden = !button.dataset.caption;
+                galleryLightbox.showModal();
+            });
+        });
+
+        document.querySelector(".gallery-lightbox-close").addEventListener("click", () => galleryLightbox.close());
+        galleryLightbox.addEventListener("close", () => {
+            galleryLightboxVideo.pause();
+            galleryLightboxVideo.removeAttribute("src");
+            galleryLightboxVideo.load();
+            galleryLightboxVideo.hidden = true;
+            galleryLightboxImage.hidden = false;
+        });
+        galleryLightbox.addEventListener("click", (event) => {
+            if (event.target === galleryLightbox) galleryLightbox.close();
+        });
+    </script>
+</body>
+</html>
